@@ -13,7 +13,7 @@ public class Availability extends BaseEntity {
     private LocalDate date;
     private Integer total;
     private Integer sold;
-    private String closedFlags; // "Y/N" yoki JSON
+    private String closedFlags;
 
     @ManyToOne
     @JoinColumn(name = "room_type_id")
