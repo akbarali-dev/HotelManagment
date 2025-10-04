@@ -2,6 +2,7 @@ package uz.javthon.hotel_manage.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
+// import uz.javthon.hotel_manage.common.entity.BaseEntity;
 import uz.javthon.hotel_manage.common.entity.BaseEntity;
 
 import java.time.LocalDate;

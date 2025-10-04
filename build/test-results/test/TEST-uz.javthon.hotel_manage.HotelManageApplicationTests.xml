@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="uz.javthon.hotel_manage.HotelManageApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-10-04T13:21:56" hostname="Aspire" time="0.416">
+  <properties/>
+  <testcase name="contextLoads()" classname="uz.javthon.hotel_manage.HotelManageApplicationTests" time="0.416"/>
+  <system-out><![CDATA[18:21:51.923 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [uz.javthon.hotel_manage.HotelManageApplicationTests]: HotelManageApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:21:52.062 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration uz.javthon.hotel_manage.HotelManageApplication for test class uz.javthon.hotel_manage.HotelManageApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.6)
+
+2025-10-04T18:21:52.582+05:00  INFO 140723 --- [hotel_manage] [    Test worker] u.j.h.HotelManageApplicationTests        : Starting HotelManageApplicationTests using Java 21.0.8 with PID 140723 (started by akbarali in /home/akbarali/programming/java/hotel_manage/hotel_manage)
+2025-10-04T18:21:52.585+05:00  INFO 140723 --- [hotel_manage] [    Test worker] u.j.h.HotelManageApplicationTests        : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T18:21:53.249+05:00  INFO 140723 --- [hotel_manage] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T18:21:53.366+05:00  INFO 140723 --- [hotel_manage] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 14 JPA repository interfaces.
+2025-10-04T18:21:53.759+05:00  INFO 140723 --- [hotel_manage] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T18:21:53.806+05:00  INFO 140723 --- [hotel_manage] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-04T18:21:53.833+05:00  INFO 140723 --- [hotel_manage] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T18:21:54.068+05:00  INFO 140723 --- [hotel_manage] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T18:21:54.092+05:00  INFO 140723 --- [hotel_manage] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T18:21:54.454+05:00  INFO 140723 --- [hotel_manage] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@dbc7e0a
+2025-10-04T18:21:54.455+05:00  INFO 140723 --- [hotel_manage] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T18:21:54.493+05:00  WARN 140723 --- [hotel_manage] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-04T18:21:54.510+05:00  INFO 140723 --- [hotel_manage] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 14.18
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04T18:21:55.898+05:00  INFO 140723 --- [hotel_manage] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: set client_min_messages = WARNING
+Hibernate: alter table if exists availability drop constraint if exists FKjwa7vaq9x87n7tmdxirayrvn3
+Hibernate: alter table if exists folio drop constraint if exists FKh4ap2gf5qj4785i7tb5dhifi5
+Hibernate: alter table if exists folio_line drop constraint if exists FKcwyrqdal1r194ddfrrecs4wrk
+Hibernate: alter table if exists housekeeping_task drop constraint if exists FK9q98ao8kc8qdcd4cqmbylxkyj
+Hibernate: alter table if exists invoice drop constraint if exists FK6th8516glna2lg0dawbwolov9
+Hibernate: alter table if exists payment drop constraint if exists FKm6da8rbxcn6ihqhpy6v1smj3o
+Hibernate: alter table if exists rate drop constraint if exists FKc5hjbsrl9c59fpw5uop0a2r47
+Hibernate: alter table if exists reservation drop constraint if exists FK8rduaf1n8es4jf5wagbjhjepj
+Hibernate: alter table if exists reservation drop constraint if exists FKm8xumi0g23038cw32oiva2ymw
+Hibernate: alter table if exists reservation drop constraint if exists FKepoxdh325da91f4wvhjry07el
+Hibernate: alter table if exists reservation_event drop constraint if exists FKpbq8t0hvotoa2oxrlt4u7ym8p
+Hibernate: alter table if exists room drop constraint if exists FKf5vbgyps3ubaknn710nk2m5o5
+Hibernate: alter table if exists work_order drop constraint if exists FKi9sww7uri0922ap92syjuqd60
+Hibernate: drop table if exists audit_log cascade
+Hibernate: drop table if exists availability cascade
+Hibernate: drop table if exists folio cascade
+Hibernate: drop table if exists folio_line cascade
+Hibernate: drop table if exists guest cascade
+Hibernate: drop table if exists housekeeping_task cascade
+Hibernate: drop table if exists invoice cascade
+Hibernate: drop table if exists payment cascade
+Hibernate: drop table if exists rate cascade
+Hibernate: drop table if exists rate_plan cascade
+Hibernate: drop table if exists reservation cascade
+Hibernate: drop table if exists reservation_event cascade
+Hibernate: drop table if exists room cascade
+Hibernate: drop table if exists room_type cascade
+Hibernate: drop table if exists work_order cascade
+Hibernate: create table audit_log (created_at timestamp(6) not null, entity_id bigint, updated_at timestamp(6), id uuid not null, action varchar(255), actor varchar(255), diff varchar(255), entity varchar(255), primary key (id))
+Hibernate: create table availability (date date, sold integer, total integer, created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, room_type_id uuid, closed_flags varchar(255), primary key (id))
+Hibernate: create table folio (balance float(53), created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, reservation_id uuid, currency varchar(255), primary key (id))
+Hibernate: create table folio_line (amount float(53), tax float(53), created_at timestamp(6) not null, updated_at timestamp(6), folio_id uuid, id uuid not null, kind varchar(255), note varchar(255), primary key (id))
+Hibernate: create table guest (created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, contacts varchar(255), doc_info varchar(255), flags varchar(255), full_name varchar(255), preferences varchar(255), primary key (id))
+Hibernate: create table housekeeping_task (date date, assignee_id bigint, created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, room_id uuid, status varchar(255), type varchar(255), primary key (id))
+Hibernate: create table invoice (created_at timestamp(6) not null, issued_at timestamp(6), updated_at timestamp(6), folio_id uuid, id uuid not null, number varchar(255), pdf_ref varchar(255), primary key (id))
+Hibernate: create table payment (amount float(53), created_at timestamp(6) not null, updated_at timestamp(6), folio_id uuid, id uuid not null, method varchar(255), rrn varchar(255), status varchar(255), primary key (id))
+Hibernate: create table rate (date date, price float(53), created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, rate_plan_id uuid, restrictions varchar(255), primary key (id))
+Hibernate: create table rate_plan (created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, code varchar(255), currency varchar(255), name varchar(255), policy varchar(255), primary key (id))
+Hibernate: create table reservation (adults integer, arrival date, children integer, departure date, created_at timestamp(6) not null, updated_at timestamp(6), guest_id uuid, id uuid not null, room_id uuid, room_type_id uuid, code varchar(255), price_summary varchar(255), status varchar(255), primary key (id))
+Hibernate: create table reservation_event (created_at timestamp(6) not null, ts timestamp(6), updated_at timestamp(6), id uuid not null, reservation_id uuid, payload varchar(255), type varchar(255), primary key (id))
+Hibernate: create table room (floor integer, created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, type_id uuid, features varchar(255), room_no varchar(255), status varchar(255), primary key (id))
+Hibernate: create table room_type (base_price float(53), capacity integer, created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, amenities varchar(255), bed_config varchar(255), name varchar(255), primary key (id))
+Hibernate: create table work_order (cost float(53), assignee_id bigint, created_at timestamp(6) not null, updated_at timestamp(6), id uuid not null, room_id uuid, issue varchar(255), priority varchar(255), status varchar(255), primary key (id))
+Hibernate: alter table if exists availability add constraint FKjwa7vaq9x87n7tmdxirayrvn3 foreign key (room_type_id) references room_type
+Hibernate: alter table if exists folio add constraint FKh4ap2gf5qj4785i7tb5dhifi5 foreign key (reservation_id) references reservation
+Hibernate: alter table if exists folio_line add constraint FKcwyrqdal1r194ddfrrecs4wrk foreign key (folio_id) references folio
+Hibernate: alter table if exists housekeeping_task add constraint FK9q98ao8kc8qdcd4cqmbylxkyj foreign key (room_id) references room
+Hibernate: alter table if exists invoice add constraint FK6th8516glna2lg0dawbwolov9 foreign key (folio_id) references folio
+Hibernate: alter table if exists payment add constraint FKm6da8rbxcn6ihqhpy6v1smj3o foreign key (folio_id) references folio
+Hibernate: alter table if exists rate add constraint FKc5hjbsrl9c59fpw5uop0a2r47 foreign key (rate_plan_id) references rate_plan
+Hibernate: alter table if exists reservation add constraint FK8rduaf1n8es4jf5wagbjhjepj foreign key (guest_id) references guest
+Hibernate: alter table if exists reservation add constraint FKm8xumi0g23038cw32oiva2ymw foreign key (room_id) references room
+Hibernate: alter table if exists reservation add constraint FKepoxdh325da91f4wvhjry07el foreign key (room_type_id) references room_type
+Hibernate: alter table if exists reservation_event add constraint FKpbq8t0hvotoa2oxrlt4u7ym8p foreign key (reservation_id) references reservation
+Hibernate: alter table if exists room add constraint FKf5vbgyps3ubaknn710nk2m5o5 foreign key (type_id) references room_type
+Hibernate: alter table if exists work_order add constraint FKi9sww7uri0922ap92syjuqd60 foreign key (room_id) references room
+2025-10-04T18:21:56.073+05:00  INFO 140723 --- [hotel_manage] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T18:21:56.226+05:00  WARN 140723 --- [hotel_manage] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T18:21:56.973+05:00  INFO 140723 --- [hotel_manage] [    Test worker] u.j.h.HotelManageApplicationTests        : Started HotelManageApplicationTests in 4.772 seconds (process running for 6.129)
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org.mockito/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (/home/akbarali/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.7/fbf3d6d649ed37fc9e9c59480a05be0a26e3c2da/byte-buddy-agent-1.17.7.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>
